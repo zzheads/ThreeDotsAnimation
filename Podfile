@@ -12,4 +12,5 @@ end
 
 target 'ThreeDotsAnimation' do
   pod 'SnapKit'
+  pod 'lottie-ios'
 end

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,15 @@
 		A638E72F25D93D0900BFA487 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A638E72D25D93D0900BFA487 /* Main.storyboard */; };
 		A638E73125D93D0A00BFA487 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A638E73025D93D0A00BFA487 /* Assets.xcassets */; };
 		A638E73425D93D0A00BFA487 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A638E73225D93D0A00BFA487 /* LaunchScreen.storyboard */; };
+		A638E73E25D93E9700BFA487 /* ThreeDotsIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A638E73D25D93E9700BFA487 /* ThreeDotsIndicator.swift */; };
+		A638E75025D9972100BFA487 /* dots.json in Resources */ = {isa = PBXBuildFile; fileRef = A638E74F25D9972100BFA487 /* dots.json */; };
+		F980B4A87CD89557FEFE120F /* Pods_ThreeDotsAnimation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B3B8332CF560DEE99AD41C /* Pods_ThreeDotsAnimation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17B3B8332CF560DEE99AD41C /* Pods_ThreeDotsAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThreeDotsAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2568BAEF62045D905BC8F9A4 /* Pods-ThreeDotsAnimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreeDotsAnimation.debug.xcconfig"; path = "Target Support Files/Pods-ThreeDotsAnimation/Pods-ThreeDotsAnimation.debug.xcconfig"; sourceTree = "<group>"; };
+		31C814C1BF9285904DD75876 /* Pods-ThreeDotsAnimation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreeDotsAnimation.release.xcconfig"; path = "Target Support Files/Pods-ThreeDotsAnimation/Pods-ThreeDotsAnimation.release.xcconfig"; sourceTree = "<group>"; };
 		A638E72425D93D0900BFA487 /* ThreeDotsAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreeDotsAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A638E72725D93D0900BFA487 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A638E72925D93D0900BFA487 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,8 @@
 		A638E73025D93D0A00BFA487 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A638E73325D93D0A00BFA487 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A638E73525D93D0A00BFA487 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A638E73D25D93E9700BFA487 /* ThreeDotsIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDotsIndicator.swift; sourceTree = "<group>"; };
+		A638E74F25D9972100BFA487 /* dots.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dots.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F980B4A87CD89557FEFE120F /* Pods_ThreeDotsAnimation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D143FA1E4D65B76D818142C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2568BAEF62045D905BC8F9A4 /* Pods-ThreeDotsAnimation.debug.xcconfig */,
+				31C814C1BF9285904DD75876 /* Pods-ThreeDotsAnimation.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A638E71B25D93D0900BFA487 = {
 			isa = PBXGroup;
 			children = (
+				A638E74F25D9972100BFA487 /* dots.json */,
 				A638E72625D93D0900BFA487 /* ThreeDotsAnimation */,
 				A638E72525D93D0900BFA487 /* Products */,
+				1D143FA1E4D65B76D818142C /* Pods */,
+				D94EB49A231206BF5D5F916D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +77,7 @@
 		A638E72625D93D0900BFA487 /* ThreeDotsAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				A638E73C25D93DCB00BFA487 /* ThreeDotsIndicator */,
 				A638E72725D93D0900BFA487 /* AppDelegate.swift */,
 				A638E72925D93D0900BFA487 /* SceneDelegate.swift */,
 				A638E72B25D93D0900BFA487 /* ViewController.swift */,
@@ -67,6 +89,22 @@
 			path = ThreeDotsAnimation;
 			sourceTree = "<group>";
 		};
+		A638E73C25D93DCB00BFA487 /* ThreeDotsIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				A638E73D25D93E9700BFA487 /* ThreeDotsIndicator.swift */,
+			);
+			path = ThreeDotsIndicator;
+			sourceTree = "<group>";
+		};
+		D94EB49A231206BF5D5F916D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17B3B8332CF560DEE99AD41C /* Pods_ThreeDotsAnimation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +112,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A638E73825D93D0A00BFA487 /* Build configuration list for PBXNativeTarget "ThreeDotsAnimation" */;
 			buildPhases = (
+				CD50092823BAB776CB53A22D /* [CP] Check Pods Manifest.lock */,
 				A638E72025D93D0900BFA487 /* Sources */,
 				A638E72125D93D0900BFA487 /* Frameworks */,
 				A638E72225D93D0900BFA487 /* Resources */,
+				8F504325B7D791404D705A6A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,11 +166,54 @@
 			files = (
 				A638E73425D93D0A00BFA487 /* LaunchScreen.storyboard in Resources */,
 				A638E73125D93D0A00BFA487 /* Assets.xcassets in Resources */,
+				A638E75025D9972100BFA487 /* dots.json in Resources */,
 				A638E72F25D93D0900BFA487 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8F504325B7D791404D705A6A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ThreeDotsAnimation/Pods-ThreeDotsAnimation-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ThreeDotsAnimation/Pods-ThreeDotsAnimation-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ThreeDotsAnimation/Pods-ThreeDotsAnimation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD50092823BAB776CB53A22D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ThreeDotsAnimation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A638E72025D93D0900BFA487 /* Sources */ = {
@@ -139,6 +222,7 @@
 			files = (
 				A638E72C25D93D0900BFA487 /* ViewController.swift in Sources */,
 				A638E72825D93D0900BFA487 /* AppDelegate.swift in Sources */,
+				A638E73E25D93E9700BFA487 /* ThreeDotsIndicator.swift in Sources */,
 				A638E72A25D93D0900BFA487 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +367,7 @@
 		};
 		A638E73925D93D0A00BFA487 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2568BAEF62045D905BC8F9A4 /* Pods-ThreeDotsAnimation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +387,7 @@
 		};
 		A638E73A25D93D0A00BFA487 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31C814C1BF9285904DD75876 /* Pods-ThreeDotsAnimation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
