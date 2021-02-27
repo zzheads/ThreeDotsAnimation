@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		A638E72825D93D0900BFA487 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A638E72725D93D0900BFA487 /* AppDelegate.swift */; };
-		A638E72A25D93D0900BFA487 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A638E72925D93D0900BFA487 /* SceneDelegate.swift */; };
-		A638E72C25D93D0900BFA487 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A638E72B25D93D0900BFA487 /* ViewController.swift */; };
-		A638E72F25D93D0900BFA487 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A638E72D25D93D0900BFA487 /* Main.storyboard */; };
+		A638E72C25D93D0900BFA487 /* ThreeDotsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A638E72B25D93D0900BFA487 /* ThreeDotsViewController.swift */; };
 		A638E73125D93D0A00BFA487 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A638E73025D93D0A00BFA487 /* Assets.xcassets */; };
 		A638E73425D93D0A00BFA487 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A638E73225D93D0A00BFA487 /* LaunchScreen.storyboard */; };
 		A638E73E25D93E9700BFA487 /* ThreeDotsIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A638E73D25D93E9700BFA487 /* ThreeDotsIndicator.swift */; };
 		A638E75025D9972100BFA487 /* dots.json in Resources */ = {isa = PBXBuildFile; fileRef = A638E74F25D9972100BFA487 /* dots.json */; };
+		A67A517325EA42BC00995302 /* RelativeCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67A517225EA42BC00995302 /* RelativeCoordinate.swift */; };
+		A67A517825EA49A000995302 /* CirclesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67A517725EA49A000995302 /* CirclesViewController.swift */; };
+		A67A517F25EA741600995302 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67A517E25EA741600995302 /* Circle.swift */; };
+		A67A518225EA743900995302 /* AnimatedCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67A518125EA743900995302 /* AnimatedCircle.swift */; };
 		F980B4A87CD89557FEFE120F /* Pods_ThreeDotsAnimation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B3B8332CF560DEE99AD41C /* Pods_ThreeDotsAnimation.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,14 +26,16 @@
 		31C814C1BF9285904DD75876 /* Pods-ThreeDotsAnimation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreeDotsAnimation.release.xcconfig"; path = "Target Support Files/Pods-ThreeDotsAnimation/Pods-ThreeDotsAnimation.release.xcconfig"; sourceTree = "<group>"; };
 		A638E72425D93D0900BFA487 /* ThreeDotsAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreeDotsAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A638E72725D93D0900BFA487 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A638E72925D93D0900BFA487 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A638E72B25D93D0900BFA487 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A638E72E25D93D0900BFA487 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A638E72B25D93D0900BFA487 /* ThreeDotsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDotsViewController.swift; sourceTree = "<group>"; };
 		A638E73025D93D0A00BFA487 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A638E73325D93D0A00BFA487 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A638E73525D93D0A00BFA487 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A638E73D25D93E9700BFA487 /* ThreeDotsIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDotsIndicator.swift; sourceTree = "<group>"; };
 		A638E74F25D9972100BFA487 /* dots.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dots.json; sourceTree = "<group>"; };
+		A67A517225EA42BC00995302 /* RelativeCoordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelativeCoordinate.swift; sourceTree = "<group>"; };
+		A67A517725EA49A000995302 /* CirclesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirclesViewController.swift; sourceTree = "<group>"; };
+		A67A517E25EA741600995302 /* Circle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
+		A67A518125EA743900995302 /* AnimatedCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedCircle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,14 +81,12 @@
 		A638E72625D93D0900BFA487 /* ThreeDotsAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				A638E73C25D93DCB00BFA487 /* ThreeDotsIndicator */,
-				A638E72725D93D0900BFA487 /* AppDelegate.swift */,
-				A638E72925D93D0900BFA487 /* SceneDelegate.swift */,
-				A638E72B25D93D0900BFA487 /* ViewController.swift */,
-				A638E72D25D93D0900BFA487 /* Main.storyboard */,
-				A638E73025D93D0A00BFA487 /* Assets.xcassets */,
-				A638E73225D93D0A00BFA487 /* LaunchScreen.storyboard */,
 				A638E73525D93D0A00BFA487 /* Info.plist */,
+				A67A517C25EA5B3E00995302 /* Application */,
+				A67A517B25EA5B3200995302 /* Resources */,
+				A67A517A25EA5B2200995302 /* Controllers */,
+				A67A517025EA42A400995302 /* Relative */,
+				A638E73C25D93DCB00BFA487 /* ThreeDotsIndicator */,
 			);
 			path = ThreeDotsAnimation;
 			sourceTree = "<group>";
@@ -95,6 +97,42 @@
 				A638E73D25D93E9700BFA487 /* ThreeDotsIndicator.swift */,
 			);
 			path = ThreeDotsIndicator;
+			sourceTree = "<group>";
+		};
+		A67A517025EA42A400995302 /* Relative */ = {
+			isa = PBXGroup;
+			children = (
+				A67A517225EA42BC00995302 /* RelativeCoordinate.swift */,
+				A67A517E25EA741600995302 /* Circle.swift */,
+				A67A518125EA743900995302 /* AnimatedCircle.swift */,
+			);
+			path = Relative;
+			sourceTree = "<group>";
+		};
+		A67A517A25EA5B2200995302 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A67A517725EA49A000995302 /* CirclesViewController.swift */,
+				A638E72B25D93D0900BFA487 /* ThreeDotsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A67A517B25EA5B3200995302 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A638E73225D93D0A00BFA487 /* LaunchScreen.storyboard */,
+				A638E73025D93D0A00BFA487 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A67A517C25EA5B3E00995302 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A638E72725D93D0900BFA487 /* AppDelegate.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 		D94EB49A231206BF5D5F916D /* Frameworks */ = {
@@ -167,7 +205,6 @@
 				A638E73425D93D0A00BFA487 /* LaunchScreen.storyboard in Resources */,
 				A638E73125D93D0A00BFA487 /* Assets.xcassets in Resources */,
 				A638E75025D9972100BFA487 /* dots.json in Resources */,
-				A638E72F25D93D0900BFA487 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,24 +257,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A638E72C25D93D0900BFA487 /* ViewController.swift in Sources */,
+				A67A517325EA42BC00995302 /* RelativeCoordinate.swift in Sources */,
+				A638E72C25D93D0900BFA487 /* ThreeDotsViewController.swift in Sources */,
 				A638E72825D93D0900BFA487 /* AppDelegate.swift in Sources */,
 				A638E73E25D93E9700BFA487 /* ThreeDotsIndicator.swift in Sources */,
-				A638E72A25D93D0900BFA487 /* SceneDelegate.swift in Sources */,
+				A67A517825EA49A000995302 /* CirclesViewController.swift in Sources */,
+				A67A518225EA743900995302 /* AnimatedCircle.swift in Sources */,
+				A67A517F25EA741600995302 /* Circle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A638E72D25D93D0900BFA487 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A638E72E25D93D0900BFA487 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A638E73225D93D0A00BFA487 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

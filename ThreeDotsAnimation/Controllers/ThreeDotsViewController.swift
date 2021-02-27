@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class ViewController: UIViewController {
+class ThreeDotsViewController: UIViewController {
     private struct Appearance {
         static let initialValue = (duration: TimeInterval(1), p1: Double(-0.035), p2: Double(0.06))
     }
