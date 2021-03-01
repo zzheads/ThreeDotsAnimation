@@ -8,10 +8,13 @@
 import SnapKit
 
 struct Circle {
-    private enum Appearance {
-        static let iterationsCount: Int = 300
+    private struct Appearance {
+        let iterationsCount: Int = 300
+        let keyPathPositionName = "position"
+        let animationLayerName = "basic"
     }
 
+    private let appearance = Appearance()
     private let side: SquareSide
     private let center: Point
 
@@ -63,25 +66,36 @@ struct Circle {
     }
 
     func animate(
-        duration: TimeInterval = 0.3,
+        duration: TimeInterval,
         function: @escaping ((Double) -> Double),
-        completion: ((Bool) -> Void)? = nil
+        repeatCount: Float = 1,
+        timingFunctionName: CAMediaTimingFunctionName = .default
     ) {
-        view.layer.add(animation(duration: duration, function: function), forKey: "basic")
+        let animation = makeAnimation(duration: duration,
+                                      function: function,
+                                      repeatCount: repeatCount,
+                                      timingFunctionName: timingFunctionName)
+        view.layer.add(animation, forKey: appearance.animationLayerName)
     }
 
-    private func animation(duration: TimeInterval, function: @escaping ((Double) -> Double)) -> CAKeyframeAnimation {
+    private func makeAnimation(
+        duration: TimeInterval,
+        function: @escaping ((Double) -> Double),
+        repeatCount: Float,
+        timingFunctionName: CAMediaTimingFunctionName
+    ) -> CAKeyframeAnimation
+    {
         let animation = CAKeyframeAnimation()
-        animation.keyPath = "position"
-        animation.timingFunction = .init(name: .easeInEaseOut)
+        animation.keyPath = appearance.keyPathPositionName
+        animation.timingFunction = .init(name: timingFunctionName)
         animation.duration = duration
-        animation.repeatCount = .infinity
+        animation.repeatCount = repeatCount
         animation.isAdditive = true
 
-        animation.values = (0..<Appearance.iterationsCount).map { x in
+        animation.values = (0..<appearance.iterationsCount).map { x in
             let dX = Double(x)
             let dY = function(dX)
-            let point = CGPoint(x: view.frame.midX - CGFloat(dX), y: view.frame.minY + CGFloat(dY))
+            let point = CGPoint(x: view.frame.midX + CGFloat(dX), y: view.frame.midY + CGFloat(dY))
             return NSValue(cgPoint: point)
         }
         return animation

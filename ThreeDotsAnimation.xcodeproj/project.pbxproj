@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A632CA5B25EAB05E009CF21A /* AnimationsExpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A632CA5A25EAB05E009CF21A /* AnimationsExpViewController.swift */; };
 		A638E72825D93D0900BFA487 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A638E72725D93D0900BFA487 /* AppDelegate.swift */; };
 		A638E72C25D93D0900BFA487 /* ThreeDotsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A638E72B25D93D0900BFA487 /* ThreeDotsViewController.swift */; };
 		A638E73125D93D0A00BFA487 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A638E73025D93D0A00BFA487 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 		17B3B8332CF560DEE99AD41C /* Pods_ThreeDotsAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThreeDotsAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2568BAEF62045D905BC8F9A4 /* Pods-ThreeDotsAnimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreeDotsAnimation.debug.xcconfig"; path = "Target Support Files/Pods-ThreeDotsAnimation/Pods-ThreeDotsAnimation.debug.xcconfig"; sourceTree = "<group>"; };
 		31C814C1BF9285904DD75876 /* Pods-ThreeDotsAnimation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreeDotsAnimation.release.xcconfig"; path = "Target Support Files/Pods-ThreeDotsAnimation/Pods-ThreeDotsAnimation.release.xcconfig"; sourceTree = "<group>"; };
+		A632CA5A25EAB05E009CF21A /* AnimationsExpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsExpViewController.swift; sourceTree = "<group>"; };
 		A638E72425D93D0900BFA487 /* ThreeDotsAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreeDotsAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A638E72725D93D0900BFA487 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A638E72B25D93D0900BFA487 /* ThreeDotsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDotsViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 			children = (
 				A67A517725EA49A000995302 /* CirclesViewController.swift */,
 				A638E72B25D93D0900BFA487 /* ThreeDotsViewController.swift */,
+				A632CA5A25EAB05E009CF21A /* AnimationsExpViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A67A517325EA42BC00995302 /* RelativeCoordinate.swift in Sources */,
+				A632CA5B25EAB05E009CF21A /* AnimationsExpViewController.swift in Sources */,
 				A638E72C25D93D0900BFA487 /* ThreeDotsViewController.swift in Sources */,
 				A638E72825D93D0900BFA487 /* AppDelegate.swift in Sources */,
 				A638E73E25D93E9700BFA487 /* ThreeDotsIndicator.swift in Sources */,
